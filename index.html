@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+</head>
+
+<body>
+    <div id="HojaDeVida">
+        <header>
+            <img src="colombia.png">
+            <div id="HeaderText">
+                <h3>FORMATO ÚNICO</h3>
+                <h1>HOJA DE VIDA</h1>
+                <h4>Persona Natural</h4>
+                <h6>(Leyes 190 de 1995, 489 y 443 de 1998)</h6>
+            </div>
+            <div id="entidadreceptora">
+                <h6>ENTIDAD RECEPTORA</h6>
+                <input type="text">
+            </div>
+        </header>
+        <main>
+            <div class="divisorContenedores"><label class="labelSubtitulo">1</label>
+                <p style="margin: 0px; color: rgb(2,159,197);">▬</p>
+                <label class="labelSubtitulo1">DATOS PERSONALES</label>
+            </div>
+            <div id="containerDatos">
+                <div class="row">
+                    <div class="sect">
+                        <label class="label">PRIMER APELLIDO</label>
+                        <input type="text">
+                    </div>
+                    <div class="sect">
+                        <label class="label">SEGUNDO APELLIDO ( O DE CASADA )</label>
+                        <input type="text">
+                    </div>
+                    <div class="sect">
+                        <label class="label">NOMBRES</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="sect">
+                        <label class="label">DOCUMENTO DE IDENTIFICACIÓN</label>
+                        <div class="insect1">
+                            <label class="sublabel"> C.C <input type="radio"></label>
+                            <label class="sublabel"> C.E <input type="radio"></label>
+                            <label class="sublabel"> PAS <input type="radio"></label>
+                            <label class="sublabel"> No.<input class="LugarNac" type="text"></label>
+                        </div>
+                    </div>
+                    <div class="sect">
+                        <label class="label">SEXO</label>
+                        <div class="insect2">
+                            <label class="sublabel"> F <input type="radio"></label>
+                            <label class="sublabel"> M <input type="radio"></label>
+                        </div>
+                    </div>
+                    <div class="sect">
+                        <div class="insect">
+                            <label class="label">NACIONALIDAD</label>
+                            <label id="Pais" class="label">PAÍS</label>
+                        </div>
+                        <div class="insect1">
+                            <label class="sublabel">COL. <input type="radio"></label>
+                            <label class="sublabel">EXTRANJERO <input type="radio"></label>
+                            <input class="LugarNac" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="sect">
+                        <label class="label">LIBRETA MILITAR</label>
+                        <div class="insect1">
+                            <label class="sublabel">PRIMERA CLASE <input type="radio"></label>
+                            <label class="sublabel">SEGUNDA CLASE <input type="radio"></label>
+                            <label class="sublabel">NÚMERO <input class="LugarNac" type="text"></label>
+                            <label class="sublabel">D.M <input class="LugarNac" type="text"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="sect">
+                        <label class="label">FECHA Y LUGAR DE NACIMIENTO</label>
+                        <div class="insect">
+                            <label class="sublabel">FECHA</label>
+                            <label class="sublabel">DÍA</label>
+                            <input class="fechas" type="text">
+                            <label class="sublabel">MES</label>
+                            <input class="fechas" type="text">
+                            <label class="sublabel">AÑO</label>
+                            <input class="fechas" type="text">
+                        </div>
+                        <div class="insect">
+                            <label class="sublabel">PAÍS </label>
+                            <input class="LugarNac" type="text">
+                        </div>
+                        <div class="insect">
+                            <label class="sublabel">DEPTO </label>
+                            <input class="LugarNac" type="text">
+                        </div>
+                        <div class="insect">
+                            <label class="sublabel">MUNICIPIO </label>
+                            <input class="LugarNac" type="text">
+                        </div>
+                    </div>
+                    <div class="sectCorresp">
+                        <label class="label">DIRECCIÓN DE CORRESPONDENCIA</label>
+                        <input class="LugarNac" type="text">
+                        <div class="insect">
+                            <label class="sublabel">PAÍS <input class="LugarNac" type="text"></label>
+                            <label class="sublabel">DEPTO <input class="LugarNac" type="text"></label>
+                        </div>
+                        <div class="insect">
+                            <label class="sublabel">MUNICIPIO <input class="LugarNac" type="text"></label>
+                        </div>
+                        <div class="insect">
+                            <label class="sublabel">TELÉFONO <input class="LugarNac" type="text"></label>
+                            <label class="sublabel">EMAIL <input class="LugarNac" type="text"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
+<style>
+    textarea:focus,
+    input:focus {
+        outline: none;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Calibri;
+    }
+
+    #HojaDeVida {
+        width: 60%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: 10px 20%;
+    }
+
+    header {
+        margin: 0px 6.5%;
+        display: flex;
+        width: 90%;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 10px 10px 0px -4px rgba(0, 0, 0, 1);
+    }
+
+    header img {
+        margin: 4px 1.5% 4px 8.5%;
+    }
+
+    #HeaderText {
+        text-align: center;
+        margin: 10px 10% 0px 12%;
+        line-height: 1.1;
+    }
+
+    #HeaderText h1 {
+        font-family: "Arial";
+        font-weight: bold;
+    }
+
+    #HeaderText h3,
+    h4,
+    h6 {
+        font-weight: 550;
+    }
+
+    #HeaderText h3 {
+        line-height: 90%;
+    }
+
+    #HeaderText h4 {
+        font-size: 14pt;
+    }
+
+    .divisorContenedores {
+        margin: 20px 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    .labelSubtitulo {
+        margin-left: 6.5%;
+        background-color: #000000;
+        border-radius: 50%;
+        color: white;
+        font-weight: 600;
+        font-family: Arial;
+        padding: 3px 7px;
+    }
+
+    .labelSubtitulo1 {
+        background-color: #000000;
+        border-radius: 50px;
+        font-weight: 600;
+        color: white;
+        padding: 2px 50px;
+        margin: -5px;
+    }
+
+    .labelSubtitulo2 {
+        background-color: #000000;
+        border-radius: 50px;
+        width: fit-content;
+        font-weight: 600;
+        color: white;
+        padding: 2px 12px;
+    }
+
+    #entidadreceptora {
+        width: 23%;
+        padding-bottom: 6.5%;
+    }
+
+
+
+    #entidadreceptora h6 {
+        font-style: italic;
+        margin-left: 20%;
+        font-size: 7pt;
+        margin-bottom: 2px;
+    }
+
+    #entidadreceptora input {
+        width: 100%;
+        line-height: 200%;
+        border: 1.8px solid black;
+    }
+
+    #containerDatos {
+        background-color: rgb(241, 249, 251);
+        margin: 15px 6.5%;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        border: 1px solid black;
+        box-shadow: 10px 10px 0px -4px rgba(0, 0, 0, 1);
+    }
+
+    #containerDatos .row {
+        display: flex;
+    }
+
+    #containerDatos .sect {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 1px 4px;
+        border-left: .1px solid black;
+        border-bottom: .1px solid black;
+    }
+
+    #containerDatos .sectCorresp {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 1px 70px;
+        border-left: .1px solid black;
+        border-bottom: .1px solid black;
+    }
+
+    #containerDatos .insect {
+        display: flex;
+        align-items: center;
+    }
+
+    #containerDatos .insect1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #containerDatos .insect2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #Pais {
+        padding-left: 22%;
+    }
+
+    #containerDatos .label {
+        font-style: italic;
+        font-size: 10pt;
+        font-weight: 400;
+    }
+
+    #containerDatos .sublabel {
+        font-size: 9pt;
+        font-weight: 400;
+        margin: 0% 1%;
+    }
+
+    #containerDatos input {
+        border: none;
+        background-color: transparent;
+        line-height: 180%;
+    }
+
+    #containerDatos input.LugarNac {
+        border-bottom: 1px solid black;
+        margin-bottom: 2%;
+    }
+
+    #containerDatos input.fechas {
+        border: 1px solid black;
+        margin-bottom: 2%;
+        margin-left: 0%;
+        width: 10%;
+        height: 18px;
+    }
+</style>
